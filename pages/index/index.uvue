@@ -1,0 +1,44 @@
+<template>
+	<view>
+		<image class="logo" src="/static/logo.png"></image>
+		<view class="text-area">
+			<text class="title">{{title}}</text>
+		</view>
+		<!-- <van-button type="primary">主要按钮</van-button> -->
+	</view>
+</template>
+
+<script>
+	import { Button } from 'vant';
+	
+	export default {
+		// components: {
+		//     [Button.name]: Button,
+		// },
+		data() {
+			return {
+				title: 'Hello'
+			}
+		},
+		onLoad() {
+
+		},
+		methods: {
+
+		}
+	}
+</script>
+
+<style>
+	.logo {
+		height: 100px;
+		width: 100px;
+		margin: 100px auto 25px auto;
+	}
+
+	.title {
+		font-size: 18px;
+		color: #8f8f94;
+    text-align: center;
+	}
+</style>
